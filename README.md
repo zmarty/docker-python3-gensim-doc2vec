@@ -14,7 +14,7 @@ Gensim is a FREE Python library
 **How to run it**
 
 ```
-docker run -it --rm zmarty/python3-gensim
+docker run -it --rm zmarty/python3-gensim-doc2vec
 ```
 
 If you are new to Docker, please note that due to the rm command line argument above all your file changes within the container will be lost.
