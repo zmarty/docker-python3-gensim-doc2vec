@@ -2,7 +2,7 @@ FROM ubuntu:15.10
 
 MAINTAINER Ovidiu Dan <contact@ovidiudan.com>
 
-RUN apt-get update && install -y \
+RUN apt-get update && apt-get install -y \
     cython3 \
     gcc \
     mc \
