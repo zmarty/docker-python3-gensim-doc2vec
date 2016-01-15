@@ -2,13 +2,18 @@ FROM ubuntu:15.10
 
 MAINTAINER Ovidiu Dan <contact@ovidiudan.com>
 
-RUN apt-get update
-RUN apt-get install -y gcc
-RUN apt-get install -y mc nano vim
-RUN apt-get install -y python3
-RUN apt-get install -y python3-pip python3-setuptools
-RUN apt-get install -y cython3
-RUN apt-get install -y python3-numpy python3-scipy
+RUN apt-get update && install -y \
+    cython3 \
+    gcc \
+    mc \
+    nano \
+    python3 \
+    python3-numpy \
+    python3-pip \
+    python3-setuptools \
+    python3-scipy \
+    vim
+
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8 
 ENV LC_CTYPE en_US.UTF-8
